@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container1 {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(110, 106, 105);
+  background: linear-gradient(
+    338deg,
+    rgba(110, 106, 105, 1) 4%,
+    rgba(57, 105, 22, 1) 43%,
+    rgba(93, 97, 72, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  height: 400px;
+  width: 350px;
+  /* border: 2px solid red; */
+  border-radius: 13px;
+  margin: auto;
+  background: rgb(145, 93, 80);
+  background: linear-gradient(
+    338deg,
+    rgba(145, 93, 80, 1) 4%,
+    rgba(45, 65, 31, 1) 39%,
+    rgba(70, 82, 11, 1) 100%
+  );
+  -webkit-box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  box-shadow: -2px -7px 31px 9px rgba(5, 1, 1, 0.86);
+  /* display: flex; */
+}
+.box1 h1 {
+  color: rgb(247, 237, 237);
+  display: flex;
+  margin: 70px auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  /* margin-bottom: 20px; */
+  font-weight: 800;
+  text-shadow: 0 0 7px #84b1b1, 0 0 10px rgb(238, 243, 243), 0 0 21px #f3e3e3,
+    0 0 42px rgb(52, 121, 121), 0 0 82px rgb(83, 9, 50),
+    0 0 92px rgb(220, 240, 216), 0 0 102px rgb(192, 194, 216),
+    0 0 15px rgb(221, 221, 230);
+}
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+
+  color: #f3e3e3;
+  padding: 10px 10px 10px 10px;
+}
+button {
+  background: rgb(49, 87, 42);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.5rem;
+  font-weight: 400;
+  font-size: 4rem;
+  border: none;
+  color: #fff;
+  transition: 1s;
+  -webkit-box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: -2px -7px 31px 9px rgba(0, 0, 0, 0.86);
+  box-shadow: -2px -7px 31px 9px rgba(5, 1, 1, 0.86);
+}
+button:hover {
+  color: rgb(192, 12, 12);
+  background: #1a4e4e;
+  transform: scale(1.08);
+}
+@media (max-width: 768px) {
+  .box1 {
+    width: 80%;
+    height: auto;
+  }
+
+  .box1 h1 {
+    font-size: 3rem;
+  }
+
+  .btn-container {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
